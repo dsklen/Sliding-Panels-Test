@@ -110,10 +110,8 @@
 				B60BA90216306DC00076BA29 /* ViewController.m */,
 				B60BA914163076F00076BA29 /* FirstViewController.h */,
 				B60BA915163076F00076BA29 /* FirstViewController.m */,
-				B60BA916163076F00076BA29 /* FirstViewController.xib */,
 				B60BA910163072520076BA29 /* BDSlidingPanelsController.h */,
 				B60BA911163072520076BA29 /* BDSlidingPanelsController.m */,
-				B60BA90416306DC00076BA29 /* ViewController.xib */,
 				B60BA8F016306DC00076BA29 /* Supporting Files */,
 			);
 			path = "Sliding-Panels-Test";
@@ -122,20 +120,46 @@
 		B60BA8F016306DC00076BA29 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6594B65163F1ADC000DAEA3 /* NIBs */,
+				B6594B64163F1ACC000DAEA3 /* Images */,
+				B6594B62163F1AB8000DAEA3 /* Categories */,
 				B60BA8F116306DC00076BA29 /* Sliding-Panels-Test-Info.plist */,
 				B60BA8F216306DC00076BA29 /* InfoPlist.strings */,
 				B60BA8F516306DC00076BA29 /* main.m */,
 				B60BA8F716306DC00076BA29 /* Sliding-Panels-Test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6594B62163F1AB8000DAEA3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B6A3A594163AF62100C3EDA7 /* UIColor+BD.h */,
+				B6A3A595163AF62100C3EDA7 /* UIColor+BD.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		B6594B64163F1ACC000DAEA3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
 				B60BA8FB16306DC00076BA29 /* Default.png */,
 				B6A3A58E1639FDCA00C3EDA7 /* CloseX.png */,
 				B60BA8FD16306DC00076BA29 /* Default@2x.png */,
 				B60BA8FF16306DC00076BA29 /* Default-568h@2x.png */,
 				B6A3A587163734DF00C3EDA7 /* left-arrow-inv.png */,
 				B6A3A592163A096E00C3EDA7 /* linen_texture.png */,
-				B6A3A594163AF62100C3EDA7 /* UIColor+BD.h */,
-				B6A3A595163AF62100C3EDA7 /* UIColor+BD.m */,
 			);
-			name = "Supporting Files";
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B6594B65163F1ADC000DAEA3 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				B60BA916163076F00076BA29 /* FirstViewController.xib */,
+				B60BA90416306DC00076BA29 /* ViewController.xib */,
+			);
+			name = NIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
