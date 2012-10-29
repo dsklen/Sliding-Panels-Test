@@ -276,9 +276,9 @@
                             viewController.view.frame = newFrame;
                     }
                 }
-                NSLog(@"Alpha %f", fminf( 1.0f, fmaxf( 0.0f, -0.01f * ( view.frame.size.width / 2.0f + translation.x + 5.0f )) ));
+                
                 view.layer.cornerRadius = fminf( 60.0f, fmaxf( 0.0f, -4.0f * ( view.frame.size.width / 2.0f + translation.x - 15.0f )) );
-            
+                
                 [[view viewWithTag:1000] setAlpha:fminf( 1.0f, fmaxf( 0.0f, -0.05f * ( view.frame.size.width / 2.0f + translation.x - 5.0f )) )];
                 
                 // Change background opacity as user slides panels.
