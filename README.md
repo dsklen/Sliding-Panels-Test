@@ -3,7 +3,7 @@ Sliding-Panels-Test
 
 ## Overview
 
-This sample project implements `BDSlidingPanelsController` a handy controller for layered sibling panels.
+This sample project implements `BDSlidingPanelsController`, a handy controller for layered sibling panels.
 
 #### Open panels
 
