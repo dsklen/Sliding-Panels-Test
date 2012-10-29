@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BDSlidingPanelsController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <BDSlidingPanelsControllerDelegate>
+
+@property (strong, nonatomic) BDSlidingPanelsController *slidingPanelsController;
+
+- (IBAction)panel:(id)sender;
+- (IBAction)panels:(id)sender;
 
 @end

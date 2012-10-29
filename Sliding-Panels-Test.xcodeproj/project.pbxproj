@@ -18,6 +18,14 @@
 		B60BA90016306DC00076BA29 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B60BA8FF16306DC00076BA29 /* Default-568h@2x.png */; };
 		B60BA90316306DC00076BA29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60BA90216306DC00076BA29 /* ViewController.m */; };
 		B60BA90616306DC00076BA29 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60BA90416306DC00076BA29 /* ViewController.xib */; };
+		B60BA912163072520076BA29 /* BDSlidingPanelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60BA911163072520076BA29 /* BDSlidingPanelsController.m */; };
+		B60BA917163076F00076BA29 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B60BA915163076F00076BA29 /* FirstViewController.m */; };
+		B60BA918163076F00076BA29 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B60BA916163076F00076BA29 /* FirstViewController.xib */; };
+		B60BA91A1630799B0076BA29 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60BA9191630799B0076BA29 /* QuartzCore.framework */; };
+		B6A3A588163734DF00C3EDA7 /* left-arrow-inv.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A587163734DF00C3EDA7 /* left-arrow-inv.png */; };
+		B6A3A58F1639FDCA00C3EDA7 /* CloseX.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A58E1639FDCA00C3EDA7 /* CloseX.png */; };
+		B6A3A593163A096E00C3EDA7 /* linen_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A3A592163A096E00C3EDA7 /* linen_texture.png */; };
+		B6A3A596163AF62100C3EDA7 /* UIColor+BD.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A3A595163AF62100C3EDA7 /* UIColor+BD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +45,17 @@
 		B60BA90116306DC00076BA29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B60BA90216306DC00076BA29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B60BA90516306DC00076BA29 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		B60BA910163072520076BA29 /* BDSlidingPanelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSlidingPanelsController.h; sourceTree = "<group>"; };
+		B60BA911163072520076BA29 /* BDSlidingPanelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDSlidingPanelsController.m; sourceTree = "<group>"; };
+		B60BA914163076F00076BA29 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B60BA915163076F00076BA29 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B60BA916163076F00076BA29 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		B60BA9191630799B0076BA29 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B6A3A587163734DF00C3EDA7 /* left-arrow-inv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow-inv.png"; sourceTree = "<group>"; };
+		B6A3A58E1639FDCA00C3EDA7 /* CloseX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CloseX.png; path = ../CloseX.png; sourceTree = "<group>"; };
+		B6A3A592163A096E00C3EDA7 /* linen_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linen_texture.png; sourceTree = "<group>"; };
+		B6A3A594163AF62100C3EDA7 /* UIColor+BD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BD.h"; sourceTree = "<group>"; };
+		B6A3A595163AF62100C3EDA7 /* UIColor+BD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60BA91A1630799B0076BA29 /* QuartzCore.framework in Frameworks */,
 				B60BA8EA16306DC00076BA29 /* UIKit.framework in Frameworks */,
 				B60BA8EC16306DC00076BA29 /* Foundation.framework in Frameworks */,
 				B60BA8EE16306DC00076BA29 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +93,7 @@
 		B60BA8E816306DC00076BA29 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B60BA9191630799B0076BA29 /* QuartzCore.framework */,
 				B60BA8E916306DC00076BA29 /* UIKit.framework */,
 				B60BA8EB16306DC00076BA29 /* Foundation.framework */,
 				B60BA8ED16306DC00076BA29 /* CoreGraphics.framework */,
@@ -87,6 +108,11 @@
 				B60BA8F916306DC00076BA29 /* AppDelegate.m */,
 				B60BA90116306DC00076BA29 /* ViewController.h */,
 				B60BA90216306DC00076BA29 /* ViewController.m */,
+				B60BA914163076F00076BA29 /* FirstViewController.h */,
+				B60BA915163076F00076BA29 /* FirstViewController.m */,
+				B60BA916163076F00076BA29 /* FirstViewController.xib */,
+				B60BA910163072520076BA29 /* BDSlidingPanelsController.h */,
+				B60BA911163072520076BA29 /* BDSlidingPanelsController.m */,
 				B60BA90416306DC00076BA29 /* ViewController.xib */,
 				B60BA8F016306DC00076BA29 /* Supporting Files */,
 			);
@@ -101,8 +127,13 @@
 				B60BA8F516306DC00076BA29 /* main.m */,
 				B60BA8F716306DC00076BA29 /* Sliding-Panels-Test-Prefix.pch */,
 				B60BA8FB16306DC00076BA29 /* Default.png */,
+				B6A3A58E1639FDCA00C3EDA7 /* CloseX.png */,
 				B60BA8FD16306DC00076BA29 /* Default@2x.png */,
 				B60BA8FF16306DC00076BA29 /* Default-568h@2x.png */,
+				B6A3A587163734DF00C3EDA7 /* left-arrow-inv.png */,
+				B6A3A592163A096E00C3EDA7 /* linen_texture.png */,
+				B6A3A594163AF62100C3EDA7 /* UIColor+BD.h */,
+				B6A3A595163AF62100C3EDA7 /* UIColor+BD.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -163,6 +194,10 @@
 				B60BA8FE16306DC00076BA29 /* Default@2x.png in Resources */,
 				B60BA90016306DC00076BA29 /* Default-568h@2x.png in Resources */,
 				B60BA90616306DC00076BA29 /* ViewController.xib in Resources */,
+				B60BA918163076F00076BA29 /* FirstViewController.xib in Resources */,
+				B6A3A588163734DF00C3EDA7 /* left-arrow-inv.png in Resources */,
+				B6A3A58F1639FDCA00C3EDA7 /* CloseX.png in Resources */,
+				B6A3A593163A096E00C3EDA7 /* linen_texture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +211,9 @@
 				B60BA8F616306DC00076BA29 /* main.m in Sources */,
 				B60BA8FA16306DC00076BA29 /* AppDelegate.m in Sources */,
 				B60BA90316306DC00076BA29 /* ViewController.m in Sources */,
+				B60BA912163072520076BA29 /* BDSlidingPanelsController.m in Sources */,
+				B60BA917163076F00076BA29 /* FirstViewController.m in Sources */,
+				B6A3A596163AF62100C3EDA7 /* UIColor+BD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +331,7 @@
 				B60BA90B16306DC00076BA29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

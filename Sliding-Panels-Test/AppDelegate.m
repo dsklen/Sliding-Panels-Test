@@ -19,8 +19,60 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    CGFloat scale = 4.71f/5.82f;
+    CGAffineTransform scaleTransform = CGAffineTransformMakeScale(scale, scale);
+    self.window.transform = CGAffineTransformConcat(scaleTransform, self.window.transform);
+    self.window.clipsToBounds = YES;
+    
+//    [self statusBarChanged:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(statusBarChanged:)
+                                                 name:UIApplicationDidChangeStatusBarOrientationNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
     return YES;
 }
+
+
+
+//- (void)statusBarChanged:(NSNotification *)note {
+//    CGFloat scale = 4.71f/5.82f;
+//    CGAffineTransform scaleTransform = CGAffineTransformMakeScale(scale, scale);
+//    UIWindow *statusBarWindow = (UIWindow *)[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
+//    statusBarWindow.transform = CGAffineTransformConcat(scaleTransform, statusBarWindow.transform);
+//}
+//
+//- (void)keyboardWillShow:(NSNotification *)note {
+//    [self performSelector:(@selector(doMagicToKeyboard)) withObject:nil afterDelay:0];
+//}
+//
+//-(void)doMagicToKeyboard {
+//    for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
+//        [self checkForKeyboard:window];
+//    }
+//}
+//
+//- (void)checkForKeyboard:(UIView *)view {
+//    static BOOL didIt = NO;
+//    for (UIView *currentView in view.subviews) {
+//        if(([[currentView description] hasPrefix:@"<UIKeyboard"] == YES) && !didIt)
+//        {
+//            didIt = YES;
+//            UIView *thisView = currentView.superview.superview;
+//            thisView.clipsToBounds = YES;
+//            CGFloat scale = 4.71f/5.82f;
+//            CGAffineTransform scaleTransform = CGAffineTransformMakeScale(scale, scale);
+//            thisView.transform = CGAffineTransformConcat(scaleTransform, thisView.transform);
+//        } else {
+//            [self checkForKeyboard:currentView];
+//        }
+//    }
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
